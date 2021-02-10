@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 String url = "http://examendp.000webhostapp.com";
 
                 Toast.makeText(MainActivity.this,"Buscando URL...", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, WenViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
                 intent.putExtra("nombre", url);
                 startActivity(intent);
             }
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this,"Buscando URL...", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
-                intent.putExtra("nombre", url);
+                intent.putExtra("urls", url);
                 startActivity(intent);
             }
         });

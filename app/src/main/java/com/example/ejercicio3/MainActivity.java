@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private EditText txtUrl;
-    private Button btnVisualizar;
+    private Button btnVis;
     private Button btnEjc1;
     private Button btnEjc2;
     private Button btnDP;
@@ -23,12 +23,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         txtUrl = (EditText) findViewById(R.id.txtUrl);
-        btnVisualizar = (Button) findViewById(R.id.btnVisualizar);
+        btnVis = (Button) findViewById(R.id.btnVisualizar);
         btnEjc1 = (Button) findViewById(R.id.btnEjc1);
         btnEjc2 = (Button) findViewById(R.id.btnEjc2);
         btnDP = (Button) findViewById(R.id.btnDp);
 
-        btnVisualizar.setOnClickListener(new View.OnClickListener() {
+        btnVis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = txtUrl.getText().toString();
